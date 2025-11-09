@@ -51,8 +51,6 @@ describe('Teste no SAUCEDEMO', () => {
         cy.get('[data-test="remove-sauce-labs-backpack"]').click()
         cy.get('.shopping_cart_badge').should('not.exist')
     })
-    
-    // TESTE DUPLICADO REMOVIDO DAQUI
 
     it('Deve completar uma compra', () => {
         cy.login('standard_user', 'secret_sauce') 
@@ -125,7 +123,6 @@ describe('Teste no SAUCEDEMO', () => {
         cy.contains('Products').should('be.visible')
     })
 
-    // TESTE DUPLICADO REMOVIDO DAQUI
 
     it('Deve exibir o total correto na finalização da compra', () => {
         cy.login('standard_user', 'secret_sauce') 
